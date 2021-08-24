@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  relay:
+    image: cardanocommunity/cardano-node
+    volumes:
+      - sockets:/opt/cardano/cnode/sockets
+      - configs:/opt/cardano/cnode/priv
+      - db:/opt/cardano/cnode/db
+    environment:
+      - NETWORK=mainnet
+    ports:
+      - 9000:6000
+    security_opt:
+      - no-new-privileges
+
+volumes:
+  sockets:
+  configs:
+  db:
