@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  proxy:
+    build: ./
+    ports:
+      - 80:80
+      - 443:443
+      - 3000:3000
+      - 3001:3001
+    networks:
+      - relay1
+      - relay2
+    container_name: proxy-composed
+  
+  relay1:
+    image: cardanocommunity/cardano-node
+    volumes:
+      - sockets:/opt/cardano/cnode/sockets
+      - configs:/opt/cardano/cnode/priv
+      - db:/opt/cardano/cnode/db
+    environment:
+      - NETWORK=mainnet
+    networks:
+      - relay1
+    security_opt:
+      - no-new-privileges
+    container_name: relay1-composed
+
+volumes:
+  sockets:
+    name: sockets
+  configs:
+    name: configs
+  db:
+    name: db
+
+networks:
+  relay1:
+    name: relay1
+  relay2:
+    name: relay2
