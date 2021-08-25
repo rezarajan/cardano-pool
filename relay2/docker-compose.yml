@@ -12,9 +12,9 @@ services:
       - 9000:6000
     security_opt:
       - no-new-privileges
-    container_name: relay1
+    container_name: relay2
     networks:
-      - relay1
+      - relay2
 
 volumes:
   sockets:
@@ -25,5 +25,5 @@ volumes:
     external: true
 
 networks:
-  relay1:
+  relay2:
     external: true
