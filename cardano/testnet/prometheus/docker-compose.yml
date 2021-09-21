@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  relay:
+    image: prom/prometheus
+    volumes:
+      - ${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - relay
+    ports:
+      - 9090:9090
+    container_name: prom-testnet
+
+networks:
+  relay:
+    name: relay-testnet

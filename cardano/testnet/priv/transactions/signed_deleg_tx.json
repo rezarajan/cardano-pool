@@ -1,0 +1,38 @@
+{
+  "id": "1631098500",
+  "type": "Wallet Delegation",
+  "date-created": "2021-09-08T10:55:01+00:00",
+  "date-expire": "2021-09-08T11:25:01+00:00",
+  "ttl": "36731083",
+  "wallet-name": "hwwallet",
+  "pool-id": "a5bda3a242406a12a5d967a69d701695b3bb89e5d3688d359909625b",
+  "txFee": "180637",
+  "txBody": {
+    "type": "TxBodyMary",
+    "description": "",
+    "cborHex": "83a50081825820092de2b00c78f18895ec0acc72af5dbeef18ef6d6808004a67f998dfebae8fed00018182583900875f8f06589880b6bf079c40ee7d7990de14c9edf0bac9b016bf5deb8414ae23f01ea595c636d11f70061c1803eab1433f03c8e01a2f93f21a3b5d3215021a0002c19d031a023078cb048183028200581c8414ae23f01ea595c636d11f70061c1803eab1433f03c8e01a2f93f2581ca5bda3a242406a12a5d967a69d701695b3bb89e5d3688d359909625b9ffff6"
+  },
+  "signing-file": [
+    {
+      "name": "Wallet 'hwwallet' payment signing key",
+      "vkey": {
+        "type": "PaymentVerificationKeyShelley_ed25519",
+        "description": "Payment Verification Key",
+        "cborHex": "58202003d9770346fa0b3328bcc5f768411617bae2c8d47e77b149a6cdd7dba31b38"
+      }
+    },
+    {
+      "name": "Wallet 'hwwallet' stake signing key",
+      "vkey": {
+        "type": "StakeVerificationKeyShelley_ed25519",
+        "description": "Stake Verification Key",
+        "cborHex": "5820bef9093edb3e7b1bd3258e81bf19a32d4da64a9053c61e5ee0ccca212a9d0479"
+      }
+    }
+  ],
+  "signed-txBody": {
+    "type": "Tx MaryEra",
+    "description": "",
+    "cborHex": "83a50081825820092de2b00c78f18895ec0acc72af5dbeef18ef6d6808004a67f998dfebae8fed00018182583900875f8f06589880b6bf079c40ee7d7990de14c9edf0bac9b016bf5deb8414ae23f01ea595c636d11f70061c1803eab1433f03c8e01a2f93f21a3b5d3215021a0002c19d031a023078cb048183028200581c8414ae23f01ea595c636d11f70061c1803eab1433f03c8e01a2f93f2581ca5bda3a242406a12a5d967a69d701695b3bb89e5d3688d359909625ba100828258202003d9770346fa0b3328bcc5f768411617bae2c8d47e77b149a6cdd7dba31b385840450f3933da83db453dcf19c836fb0367ba9308a4ebd2cf6273eea1e4f05c086e2790b2d4234aa45f97aaa3b99b8be9af40b3ad63929830ed7c1bb9bdcb24100c825820bef9093edb3e7b1bd3258e81bf19a32d4da64a9053c61e5ee0ccca212a9d0479584067e12ba87bdb3a8dd2326fd4c1649a9c0a6a5f8cd92d1397ccc485f5dec91064ed6a14474be3691541c6ac6aec711552931e404a458e1b5933f7c8c7a5550601f6"
+  }
+}

@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  relay:
+    image: rezarajan/freebird
+    volumes:
+      - sockets:/opt/cardano/cnode/sockets
+      - db:/opt/cardano/cnode/db
+    environment:
+      - NETWORK=mainnet
+    networks:
+      - relay
+    ports:
+      - 9000:6000
+    security_opt:
+      - no-new-privileges
+    container_name: relay
+
+volumes:
+  sockets:
+    name: sockets
+  db:
+    name: db
+
+networks:
+  relay:
+    name: relay

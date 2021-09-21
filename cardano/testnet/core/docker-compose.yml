@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  relay:
+    image: rezarajan/freebird
+    volumes:
+      - sockets:/opt/cardano/cnode/sockets
+      - db:/opt/cardano/cnode/db
+      - priv:/opt/cardano/cnode/priv
+    environment:
+      - NETWORK=testnet
+    networks:
+      - core
+    ports:
+      - 9002:6000
+    container_name: core-testnet
+
+volumes:
+  sockets:
+    name: sockets-core-testnet
+  db:
+    name: db-core-testnet
+  priv:
+    name: priv-core-testnet
+
+networks:
+  core:
+    name: relay-testnet

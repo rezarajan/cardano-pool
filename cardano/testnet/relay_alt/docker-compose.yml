@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  relay:
+    image: rezarajan/freebird
+    volumes:
+      - sockets:/opt/cardano/cnode/sockets
+      - db:/opt/cardano/cnode/db
+    environment:
+      - NETWORK=testnet
+    networks:
+      - relay
+    ports:
+      - 12798:12798
+    container_name: relay-alt-testnet
+
+volumes:
+  sockets:
+    name: sockets-alt-testnet
+  db:
+    name: db-alt-testnet
+
+networks:
+  relay:
+    name: relay-testnet

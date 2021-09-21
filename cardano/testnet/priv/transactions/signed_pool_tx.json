@@ -1,0 +1,102 @@
+{
+  "id": "1631096929",
+  "type": "Pool Update",
+  "date-created": "2021-09-08T10:28:49+00:00",
+  "date-expire": "2021-09-08T10:58:49+00:00",
+  "ttl": "36729511",
+  "pool-name": "KAIBA",
+  "pool-metadata": {
+    "name": "KAIBA",
+    "ticker": "SETO",
+    "description": "Seto Kaiba testnet pool.",
+    "homepage": "https://yugioh.fandom.com/wiki/Seto_Kaiba",
+    "nonce": "1630614731"
+  },
+  "pool-pledge": "100",
+  "pool-margin": "1",
+  "pool-cost": "340",
+  "pool-reg-cert": {
+    "type": "CertificateShelley",
+    "description": "Stake Pool Registration Certificate",
+    "cborHex": "8a03581ca5bda3a242406a12a5d967a69d701695b3bb89e5d3688d359909625b5820a06ef60ff5b8f779e4952444b22fafe3073220a65376b8c0e132281284f674031a05f5e1001a1443fd00d81e82011864581de0ca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe482581c8414ae23f01ea595c636d11f70061c1803eab1433f03c8e01a2f93f2581cca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe48183011917707472656c61792e6b6177616969706f6f6c2e6d6f65827468747470733a2f2f6769742e696f2f4a4568746d582015ae1baa580cc2ba8412163241e8819bfdc33495e6f2c83de78692e240a4587c"
+  },
+  "txFee": "201889",
+  "txBody": {
+    "type": "TxBodyMary",
+    "description": "",
+    "cborHex": "83a50081825820ae97a74983f85aba54b67392d6cdf39e6f9477caf0046aa1c939fb9aa2d41e9800018182583900d1b67ff633e238aec6f8d3ca62fc59a233203e2517b46907390d5f06ca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe41a1d9a33a9021a000314a1031a023072a704818a03581ca5bda3a242406a12a5d967a69d701695b3bb89e5d3688d359909625b5820a06ef60ff5b8f779e4952444b22fafe3073220a65376b8c0e132281284f674031a05f5e1001a1443fd00d81e82011864581de0ca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe482581c8414ae23f01ea595c636d11f70061c1803eab1433f03c8e01a2f93f2581cca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe48183011917707472656c61792e6b6177616969706f6f6c2e6d6f65827468747470733a2f2f6769742e696f2f4a4568746d582015ae1baa580cc2ba8412163241e8819bfdc33495e6f2c83de78692e240a4587c9ffff6"
+  },
+  "signing-file": [
+    {
+      "name": "Owner #1 'fontaine' payment signing key",
+      "vkey": {
+        "type": "PaymentVerificationKeyShelley_ed25519",
+        "description": "Payment Verification Key",
+        "cborHex": "582033ee7f260b612f8517ee764c8eff7ee709d9a3d4cfd84fa03b3acbc992747d01"
+      }
+    },
+    {
+      "name": "Owner #1 'fontaine' stake signing key",
+      "vkey": {
+        "type": "StakeVerificationKeyShelley_ed25519",
+        "description": "Stake Verification Key",
+        "cborHex": "5820b0542613b3ed33cae84edb68baaca58cb68743c10727a7a4fe792077a594675e"
+      }
+    },
+    {
+      "name": "Owner #2 'hwwallet' stake signing key",
+      "vkey": {
+        "type": "StakeVerificationKeyShelley_ed25519",
+        "description": "Stake Verification Key",
+        "cborHex": "5820bef9093edb3e7b1bd3258e81bf19a32d4da64a9053c61e5ee0ccca212a9d0479"
+      }
+    },
+    {
+      "name": "Pool 'KAIBA' cold signing key",
+      "vkey": {
+        "type": "StakePoolVerificationKey_ed25519",
+        "description": "Stake Pool Operator Verification Key",
+        "cborHex": "582003513704bd5bdccdf6e657393ad2b099d986918ff7ac07ecda2276267e39a3c0"
+      }
+    }
+  ],
+  "witness": [
+    {
+      "name": "Owner #1 'fontaine' payment signing key",
+      "witnessBody": {
+        "type": "TxWitness MaryEra",
+        "description": "",
+        "cborHex": "820082582033ee7f260b612f8517ee764c8eff7ee709d9a3d4cfd84fa03b3acbc992747d0158402a1e2ba5cfeec274d56be7f358b11d37671a417e31933c6ca06127ebb7394e5329d236d66ebcd504c715751c589bc9ebc37ca06eabe275a367a21bb2f6162503"
+      }
+    },
+    {
+      "name": "Owner #1 'fontaine' stake signing key",
+      "witnessBody": {
+        "type": "TxWitness MaryEra",
+        "description": "",
+        "cborHex": "8200825820b0542613b3ed33cae84edb68baaca58cb68743c10727a7a4fe792077a594675e5840626a829b7ce3b8ccb01c27167378a2c0b30cecdec1cc2709538a200f1d18766cf20d10ef3af91f63986ed944b31266ba89d81461f1e643fd0af29c5b22091a06"
+      }
+    },
+    {
+      "name": "Owner #2 'hwwallet' stake signing key",
+      "witnessBody": {
+        "type": "TxWitness MaryEra",
+        "description": "",
+        "cborHex": "8200825820bef9093edb3e7b1bd3258e81bf19a32d4da64a9053c61e5ee0ccca212a9d04795840c477e4c77a08caf331b04b8077be7be379cfcc3416eff9e700f291cac4d9a8ddde22d93bea5ae20792649f7da4a952d5ca041dd17eb8f57db95dc2705ac9290e"
+      }
+    },
+    {
+      "name": "Pool 'KAIBA' cold signing key",
+      "witnessBody": {
+        "type": "TxWitness MaryEra",
+        "description": "",
+        "cborHex": "820082582003513704bd5bdccdf6e657393ad2b099d986918ff7ac07ecda2276267e39a3c05840a8202a424a6259ced895f15d86efa18dc714614657b4274afbd42d4f2d41d8a439582a8edc689e28c15f5078f26703fd88ad6e0d18380a1dde8d8428c433a80d"
+      }
+    }
+  ],
+  "signed-txBody": {
+    "type": "Tx MaryEra",
+    "description": "",
+    "cborHex": "83a50081825820ae97a74983f85aba54b67392d6cdf39e6f9477caf0046aa1c939fb9aa2d41e9800018182583900d1b67ff633e238aec6f8d3ca62fc59a233203e2517b46907390d5f06ca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe41a1d9a33a9021a000314a1031a023072a704818a03581ca5bda3a242406a12a5d967a69d701695b3bb89e5d3688d359909625b5820a06ef60ff5b8f779e4952444b22fafe3073220a65376b8c0e132281284f674031a05f5e1001a1443fd00d81e82011864581de0ca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe482581c8414ae23f01ea595c636d11f70061c1803eab1433f03c8e01a2f93f2581cca3531ae0bf1167d10b2e053f3428a6bbca5de6d2be27348807cabe48183011917707472656c61792e6b6177616969706f6f6c2e6d6f65827468747470733a2f2f6769742e696f2f4a4568746d582015ae1baa580cc2ba8412163241e8819bfdc33495e6f2c83de78692e240a4587ca10084825820bef9093edb3e7b1bd3258e81bf19a32d4da64a9053c61e5ee0ccca212a9d04795840c477e4c77a08caf331b04b8077be7be379cfcc3416eff9e700f291cac4d9a8ddde22d93bea5ae20792649f7da4a952d5ca041dd17eb8f57db95dc2705ac9290e82582003513704bd5bdccdf6e657393ad2b099d986918ff7ac07ecda2276267e39a3c05840a8202a424a6259ced895f15d86efa18dc714614657b4274afbd42d4f2d41d8a439582a8edc689e28c15f5078f26703fd88ad6e0d18380a1dde8d8428c433a80d825820b0542613b3ed33cae84edb68baaca58cb68743c10727a7a4fe792077a594675e5840626a829b7ce3b8ccb01c27167378a2c0b30cecdec1cc2709538a200f1d18766cf20d10ef3af91f63986ed944b31266ba89d81461f1e643fd0af29c5b22091a0682582033ee7f260b612f8517ee764c8eff7ee709d9a3d4cfd84fa03b3acbc992747d0158402a1e2ba5cfeec274d56be7f358b11d37671a417e31933c6ca06127ebb7394e5329d236d66ebcd504c715751c589bc9ebc37ca06eabe275a367a21bb2f6162503f6"
+  }
+}

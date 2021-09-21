@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  relay:
+    image: rezarajan/freebird
+    container_name: airgapped
+    entrypoint: bash
+    stdin_open: true
+    tty: true   
+

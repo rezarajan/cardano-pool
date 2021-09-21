@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  relay:
+    image: grafana/grafana
+    volumes:
+      - grafana:/var/lib/grafana
+    networks:
+      - relay
+    ports:
+      - 3000:3000
+    container_name: grafana
+
+volumes:
+  grafana:
+    name: grafana-storage
+
+networks:
+  relay:
+    name: relay-testnet
