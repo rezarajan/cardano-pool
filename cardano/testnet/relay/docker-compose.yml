@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   relay:
-    image: rezarajan/freebird
+    image: cardanocommunity/cardano-node:latest
     volumes:
       - sockets:/opt/cardano/cnode/sockets
       - db:/opt/cardano/cnode/db
